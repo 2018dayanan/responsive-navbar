@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo.png">
+			
+		</div>
+		<nav class="nav" id="nav-menu">
+			<img src="close.png" class="header__close" id="close-menu">
+			<ul class="nav__list">
+				<li class="nav__items"><a href="" class="nav__links">Home</a></li>
+				<li class="nav__items"><a href="" class="nav__links">About</a></li>
+				<li class="nav__items"><a href="" class="nav__links">Contact</a></li>
+				<li class="nav__items"><a href="" class="nav__links">Services</a></li>
+			</ul>
+			
+		</nav>
+		<img src="menu.png" class="header__toggle" id="toggle-menu">
+	</header>	
+	<script type="text/javascript">
+		const navMenu =document.getElementById('nav-menu'),
+		toggleMenu = document.getElementById('toggle-menu'),
+		 closeMenu =document.getElementById('close-menu')
+
+		toggleMenu.addEventListener('click',() =>{
+				navMenu.classList.toggle('show');
+
+		})
+		closeMenu.addEventListener('click',() =>{
+				navMenu.classList.remove('show');
+
+		})
+
+
+	</script>
+
+</body>
+</html>
